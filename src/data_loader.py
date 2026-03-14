@@ -16,7 +16,7 @@ def download_prices(tickers, start, end):
 if __name__ == "__main__":
     tickers = get_sp500_tickers()
     print(f"Total tickers: {len(tickers)}")
-    prices = download_prices(tickers, "2020-01-01", "2024-01-01")
+    prices = download_prices(tickers, "2018-01-01", "2024-01-01")
     print(prices.shape)
     prices.to_csv("data/prices.csv")
     print("Guardado em data/prices.csv")
